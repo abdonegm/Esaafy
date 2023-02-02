@@ -1,0 +1,385 @@
+.header-content{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    height: calc(100vh - 3rem);
+    gap:20%;
+    align-items: center;
+    z-index: 100;
+}
+.Header{
+    z-index: -100;
+    background: url(../../images/background1.png) no-repeat center;
+}
+.circle{
+  background-color: #D3D9FF;
+
+  position: relative;
+ height: 400px;
+ width: 400px;
+ border-radius: 50%;
+ margin-left: 20px;
+ box-shadow: 5px 10px 18px var(--primary-color)
+
+ 
+
+
+}
+.circle img{
+    width:300px;
+    height: 400px;
+    position: absolute;
+  
+}
+#f-img{
+    top:1rem;
+    left:-3rem;
+}
+
+.header-content .tst{
+    background-color: var(--sacondary-color);
+    width: 2rem;
+    height: 1rem;
+    background-color: red;
+}
+.header-content div p:nth-child(1){
+   color: var(--sacondary-color);
+   font-size: 1.3rem;
+}
+ button img{
+    width: 2rem;
+    height: 2rem ;
+}
+
+@media (max-width:1024px) {
+    .header-content{
+        grid-template-columns: 1fr;
+
+    }
+    .circle{
+        display: none;
+    }
+    .txt{
+        padding: 2rem;
+    }
+    
+}
+/*end of header */
+
+/*start story */
+.story{
+    background-color: #f3f4ff;
+    position: relative;
+    padding: 2rem;
+   
+}
+.our-story{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 4rem;
+    padding: 3rem;
+  
+    
+
+
+    
+}
+
+.about-story{
+    background: url(../../images/background1.png);
+  
+ 
+}
+.pop{
+   position: fixed;
+   top: 0;
+   left: 0;
+    width:100%;
+    height: 100vh;
+    background-color: black;
+  
+}
+.pop iframe{
+    width: 100%;
+    height: 80%;
+    margin-top: 5rem;
+    position: relative;
+}
+.pop .close{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+
+}
+.story .show{
+    display: block;
+}
+.story .hide{
+    display: none;
+}
+.vid {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    box-shadow: 5px 10px 18px var(--primary-color)
+}
+.vid img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+@media (max-width:1024px) {
+    .our-story{
+        grid-template-columns: 1fr;
+       
+    }
+    
+}
+@media (max-width:600px){
+    .about-story{
+        text-align: center;
+    }
+}
+
+
+/*start services*/
+.services{
+    margin-top: 5rem;
+}
+.title{
+   
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title::after{
+
+    position: absolute;
+    content: "";
+    height: .4rem;
+    width: 5rem;
+    bottom: -1rem;
+  
+    background-color: var(--sacondary-color);
+
+}
+
+
+.services-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+    padding: 5rem;
+    margin-top: 5rem;
+}
+.services-content >div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgb(214, 214, 214);
+    height: 400px;
+    border-radius: 1rem;
+    padding: 3rem;
+    box-shadow: 5px 10px 18px rgb(172, 172, 216)
+}
+.services-content >div >svg{
+    font-size: 4rem;
+    margin: 2rem;
+    background-color: var(--primary-color);
+   padding: 1rem;
+    color: white;
+    z-index: 100;
+    border-radius: 50%;
+}
+.services-content .active{
+    background-color: var(--primary-color);
+    color: white;
+}
+.services-content .active svg{
+    background-color: white;
+    color: var(--primary-color);
+    
+}
+
+@media (max-width:1024px) {
+    .services-content{
+        grid-template-columns: 1fr 1fr;
+         justify-content: space-around;
+    }
+    
+ 
+}
+@media (max-width:600px){
+    .services-content{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/*start features */
+.features{
+    padding: 2rem;
+}
+.features-content{
+  margin-top: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3rem;
+}
+.features-content >div >svg{
+    font-size: 4rem;
+    color: var(--primary-color);
+    background-color:  #e7eafc;
+    border-radius: 50%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.features-content >div{
+    border: 1px solid rgb(223, 223, 223);
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 5px 10px 18px rgb(172, 172, 216);
+    cursor: pointer;
+}
+@media (max-width:1024px) {
+    .features-content{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    
+}
+@media (max-width:600px) {
+    .features-content{
+        grid-template-columns:1fr;
+        place-items: center;
+       
+    }
+
+    
+}
+
+/*start Works*/
+.our-works{
+    padding: 5rem;
+}
+
+.works{
+    display: flex;
+    gap: 5rem;
+    margin-top: 4rem;
+    box-shadow: 5px 4px 2px rgb(172, 172, 216);
+    border-radius: 1rem;
+    padding-right: .5rem;
+    align-items: center;
+    height: 4rem;
+    
+    justify-content: center;
+
+}
+.works >div{
+
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+  margin-top: 1rem;
+  justify-content: center;
+}
+.works .aactive{
+    background-color: var(--primary-color);
+    color: white;   
+   
+
+}
+.image-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-top: 4rem;
+}
+.mywork img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+@media (max-width:1024px) {
+    .works{
+        gap: 2rem;
+    }
+    .image-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+@media (max-width:600px){
+    .works{
+        gap: 1rem;
+    }
+}
+
+
+/* start About app */
+.about{
+    background-color: #e7eafc;
+    padding: 4rem;
+    
+}
+.about-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+}
+.about-image{
+display: flex;
+
+justify-content: center;
+
+   
+}
+.about-image img{
+    width: 100%;
+}
+
+/*start Contact */
+.contact{
+    padding: 4rem;
+}
+
+.contact-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 5px 4px 2px rgb(207, 207, 228);
+    border: 1px solid rgb(220, 224, 226);
+    
+}
+.locat{
+    padding: 2rem;
+}
+.locat img{
+    width: 70%;
+
+}
+@media (max-width:1024px) {
+    .contact-content{
+        grid-template-columns: 1fr;
+    }
+    .locat{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

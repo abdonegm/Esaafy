@@ -1,0 +1,58 @@
+footer{
+    background-color: rgb(236, 236, 236);
+    padding: 5rem 0;
+}
+.foot{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   gap: 3rem;
+}
+.foot >div >p{
+    color: rgb(99, 96, 96);
+    cursor: pointer;
+}
+.foot >div >p:hover{
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+.title-foot{
+    position: relative;
+    margin-bottom: 1.4rem;
+    
+}
+.title-foot::before{
+    content: "";
+    position: absolute;
+    width: 4rem;
+    height:.15rem;
+    right: 0;
+    background-color: var(--primary-color);
+    bottom: -.7rem;
+}
+.foot svg{
+    cursor: pointer;
+
+}
+.foot svg:hover{
+    color: var(--primary-color);
+   
+}
+@media (max-width:1024px) {
+    .foot{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 4rem  2rem;
+        place-items: center;
+    }
+    
+}
+@media (max-width:600px) {
+    .foot{
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem  2rem;
+        place-items: center;
+    }
+    .foot >div >p:hover{
+        font-size: 1rem;
+    }
+    
+}
